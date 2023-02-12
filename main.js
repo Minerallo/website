@@ -1,9 +1,13 @@
-import * as THREE from 'https://unpkg.com/three/build/three.module.js';
-/*  'three';*/
+import * as THREE from 'https://cdn.skypack.dev/three';
+import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js';
+import { FontLoader } from 'https://cdn.skypack.dev/three/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from 'https://cdn.skypack.dev/three/examples/jsm/geometries/TextGeometry.js'; 
+
+/* import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js';
-import { SimplexNoise } from "three/examples/jsm/math/SimplexNoise";
+import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'; */
+/* import { SimplexNoise } from "three/examples/jsm/math/SimplexNoise"; */
 /* import { BufferGeometry } from 'three';
 import gsap from 'gsap'; */
 import './style.css';
