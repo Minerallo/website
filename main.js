@@ -99,7 +99,7 @@ function runSolarSystemSimulation() {
 
 
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Milkyway.jpg');
+    var milkyWayTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Milkyway.jpg');
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -143,7 +143,7 @@ function runSolarSystemSimulation() {
 
     for (var i = 1; i < planets.length; i++) {
         var planetGeometry = new THREE.SphereGeometry(planets[i].radius, 64, 64);
-        var planetTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/' + planets[i].name + '-texture.jpg');
+        var planetTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/' + planets[i].name + '-texture.jpg');
         var planetMaterial = new THREE.MeshBasicMaterial({ map: planetTexture });
         var planet = new THREE.Mesh(planetGeometry, planetMaterial);
         planet.position.x = planets[i].distance;
@@ -304,7 +304,7 @@ function runEarthSystemSimulation() {
 
     //Around the data
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Milkyway.jpg');
+    var milkyWayTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Milkyway.jpg');
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -331,8 +331,8 @@ function runEarthSystemSimulation() {
     for (var i = 0; i < planets.length; i++) {
 
         var planetGeometry = new THREE.SphereGeometry(planets[i].radius, 720, 360);
-        var planetTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Earth2-texture.jpg');
-        var bumpTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Earth-bump-map.jpg');
+        var planetTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Earth2-texture.jpg');
+        var bumpTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Earth-bump-map.jpg');
         var planetMaterial = new THREE.MeshPhongMaterial({
             map: planetTexture,
             displacementMap: bumpTexture,
@@ -358,7 +358,7 @@ function runEarthSystemSimulation() {
     function runClipping() {
         //Around the data
         // Load the panoramic image of the Milky Way
-        var milkyWayTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Milkyway.jpg');
+        var milkyWayTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Milkyway.jpg');
 
         // Create a large sphere geometry
         var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -387,8 +387,8 @@ function runEarthSystemSimulation() {
     const halfGeometry = new THREE.SphereGeometry(planets[0].radius, 720, 360, phiStart, phiEnd, thetaStart, thetaEnd);
     //const halfMaterial = new THREE.MeshBasicMaterial({ color: 0x9900ff, wireframe: true });
 
-        var planethalfTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Earth2-half-texture.jpg');
-        var bumphalfTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Earth-half-bump-map.jpg');
+        var planethalfTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Earth2-half-texture.jpg');
+        var bumphalfTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Earth-half-bump-map.jpg');
 
 
     var halfMaterial = new THREE.MeshPhongMaterial({
@@ -464,7 +464,7 @@ function runEarthSystemSimulation() {
         new_depths.push(depths[i])
        // console.log("iteration i "+i)
         // Load the data file
-        promises.push(fetch('http://minerallo.github.io/SP12RTS_5defequid/SP12RTS..ES.' + depths[i] + '.' + 'eqdst.5.latlon.dat')
+        promises.push(fetch('https://minerallo.github.io/SP12RTS_5defequid/SP12RTS..ES.' + depths[i] + '.' + 'eqdst.5.latlon.dat')
             .then(response => {
                 if (response.status === 200) {
                     console.log("File exists and Loaded");
@@ -643,7 +643,7 @@ exitClippingButton.addEventListener("click", function () {
 function exitClipping() {
     //Around the data
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Milkyway.jpg');
+    var milkyWayTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Milkyway.jpg');
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -788,7 +788,7 @@ loop()
 
 
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load('http://minerallo.github.io/Texture_planets/Milkyway.jpg');
+    var milkyWayTexture = new THREE.TextureLoader().load('https://minerallo.github.io/Texture_planets/Milkyway.jpg');
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -1025,7 +1025,7 @@ cvLink.addEventListener('click', function (event) {
     const closePopup = document.querySelector("#cv-popup .close-popup");
     closePopup.addEventListener('click', function () {
         cvpopup.style.display = 'none';
-        window.location.href = "http://minerallo.github.io/index.html";
+        window.location.href = "https://minerallo.github.io/index.html";
     });
 });
 
@@ -1044,7 +1044,7 @@ aboutMeLink.addEventListener('click', function (event) {
     const closePopup = document.querySelector("#aboutme-popup .close-popup");
     closePopup.addEventListener('click', function () {
         aboutmepopup.style.display = 'none';
-        window.location.href = "http://minerallo.github.io/index.html";
+        window.location.href = "https://minerallo.github.io/index.html";
     });
 });
 
@@ -1056,7 +1056,7 @@ researchLink.addEventListener('click', function (event) {
     const closePopup = document.querySelector("#research-popup .close-popup");
     closePopup.addEventListener('click', function () {
         researchpopup.style.display = 'none';
-        window.location.href = "http://minerallo.github.io/index.html";
+        window.location.href = "https://minerallo.github.io/index.html";
     });
 });
 
@@ -1075,14 +1075,14 @@ publicationsLink.addEventListener('click', function (event) {
     const closePopup = document.querySelector("#publications-popup .close-popup");
     closePopup.addEventListener('click', function () {
         publicationspopup.style.display = 'none';
-        window.location.href = "http://minerallo.github.io/index.html";
+        window.location.href = "https://minerallo.github.io/index.html";
     });
 });
 
 modelGalleryLink.addEventListener('click', function () {
         //clearScene();
         //runGallerySimulation();
-    window.location.href = "http://minerallo.github.io/gallery.html";
+    window.location.href = "https://minerallo.github.io/gallery.html";
     });
 
 
@@ -1094,7 +1094,7 @@ socialNetworksLink.addEventListener('click', function (event) {
     const closePopup = document.querySelector("#social-popup .close-popup");
     closePopup.addEventListener('click', function () {
         socialpopup.style.display = 'none';
-        window.location.href = "http://minerallo.github.io/index.html";
+        window.location.href = "https://minerallo.github.io/index.html";
     });
 });
 
