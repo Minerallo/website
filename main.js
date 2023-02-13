@@ -715,7 +715,7 @@ loop()
     render();
 }
 
-/* function runTopographySystemSimulation() {
+ /*  function runTopographySystemSimulation() {
 
     window.addEventListener('click', () => {
         document.getElementById("bg-music").play();
@@ -864,7 +864,7 @@ loop()
     // Define the flow direction array and the stream power array
     let flowDirection = [];
     let streamPower = [];
-/* 
+    /* 
     // Compute the flow direction and stream power using the DEM
     for (let i = 0; i < topography.length; i++) {
         for (let j = 0; j < topography[0].length; j++) {
@@ -951,7 +951,7 @@ loop()
         return flowDirection;
     } */
 
-    // create light
+   /*  // create light
     var light = new THREE.PointLight(0xffffff, 1, 100);
     light.position.set(0, 3, 3);
     scene.add(light);
@@ -991,7 +991,7 @@ loop()
         renderer.render(scene, camera);
     }
     render();
-}
+} */
 
 //Pages links
 const cvLink = document.querySelector('.cv-link');
