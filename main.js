@@ -1,8 +1,10 @@
-import * as THREE from 'https://cdn.skypack.dev/three';
-import { OrbitControls } from 'https://cdn.skypack.dev/three/examples/jsm/controls/OrbitControls.js';
-import { FontLoader } from 'https://cdn.skypack.dev/three/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'https://cdn.skypack.dev/three/examples/jsm/geometries/TextGeometry.js'; 
-
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js';
+import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/controls/OrbitControls.js';
+import { FontLoader } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/geometries/TextGeometry.js';
+import 'https://minerallo.github.io/style.css';
+/* import * as dat from 'https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.module.min.js';
+import chroma from 'chroma-js'; */
 /* import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
@@ -10,10 +12,6 @@ import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'; */
 /* import { SimplexNoise } from "three/examples/jsm/math/SimplexNoise"; */
 /* import { BufferGeometry } from 'three';
 import gsap from 'gsap'; */
-import 'http://minerallo.github.io/style.css';
-/* import * as dat from 'https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.module.min.js';
-import chroma from 'chroma-js'; */
-
 
 // Get the buttonsfor simulations 
 let solarSystemButton = document.getElementById("solar-system-button");
@@ -717,7 +715,7 @@ loop()
     render();
 }
 
-function runTopographySystemSimulation() {
+/* function runTopographySystemSimulation() {
 
     window.addEventListener('click', () => {
         document.getElementById("bg-music").play();
@@ -856,7 +854,7 @@ function runTopographySystemSimulation() {
     plane.rotation.x = -0.5 * Math.PI;
     plane.position.y = -1;
     plane.scale.set(20, 20, 1);
-    scene.add(plane);
+    scene.add(plane); */
 
 
 
