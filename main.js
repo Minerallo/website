@@ -1082,7 +1082,7 @@ publicationsLink.addEventListener('click', function (event) {
 modelGalleryLink.addEventListener('click', function () {
         //clearScene();
         //runGallerySimulation();
-    window.location.href = "index.html";
+    window.location.href = "gallery.html";
     });
 
 
