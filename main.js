@@ -135,7 +135,7 @@ function runSolarSystemSimulation() {
     ];
 
 
-    var SunTexture = new THREE.TextureLoader().load('Texture_planets/Sun-texture.jpg');
+    var SunTexture = new THREE.TextureLoader().load("/Texture_planets/Sun-texture.jpg");
     var sunGeometry = new THREE.SphereGeometry(planets[0].radius, 64, 64);
     var sunMaterial = new THREE.MeshBasicMaterial({ map: SunTexture });
     var sun = new THREE.Mesh(sunGeometry, sunMaterial);
