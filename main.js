@@ -2,7 +2,7 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.m
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/controls/OrbitControls.js';
 import { FontLoader } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/loaders/FontLoader.js';
 import { TextGeometry } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/geometries/TextGeometry.js';
-import 'https://minerallo.github.io/style.css';
+import "style.css";
 /* import * as dat from 'https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.module.min.js';
 import chroma from 'chroma-js'; */
 /* import * as THREE from 'https://unpkg.com/three/build/three.module.js';
