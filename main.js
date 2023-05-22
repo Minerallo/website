@@ -1,8 +1,17 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js';
-import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/controls/OrbitControls.js';
-import { FontLoader } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/geometries/TextGeometry.js';
-import "style.css";
+import * as THREE from './three.module.js';
+import { OrbitControls } from './OrbitControls.js';
+import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+import "./style.css";
+
+
+// import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js';
+// import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/controls/OrbitControls.js';
+// import { FontLoader } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/loaders/FontLoader.js';
+// import { TextGeometry } from 'https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/geometries/TextGeometry.js';
+// import "./style.css";
+
+
 /* import * as dat from 'https://cdn.jsdelivr.net/npm/dat.gui@0.7.7/build/dat.gui.module.min.js';
 import chroma from 'chroma-js'; */
 /* import * as THREE from 'https://unpkg.com/three/build/three.module.js';
