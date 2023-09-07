@@ -359,7 +359,17 @@ LIU, Hongsheng, MARTELET, Guillaume, WANG, Bo, et al. <a href="https://agupubs.o
     <button id="close-button">Close</button>
     <p id="planet-desc"></p>
   </div>
-  <script type="module" src="./main.js"></script>
+  <script>
+    var app = "https://kitware.github.io/paraview-glance/app";
+    var datadir = "https://nextcloud.gfz-potsdam.de/s/aZAM59DHTXY36NE";
+    var file = "3D_eart_model_test.vtkjs";
+
+    // document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + file + "' id='iframe' width='1100' height='900'></iframe>");
+
+    document.write("<iframe src='" + app + "?name=" + file + "&url=" +datadir + "' id='iframe' width='1100' height='900'></iframe>");
+
+</script>
+  <!-- <script type="module" src="./main.js"></script> -->
   <!-- <script type="module" src="Example_pointcloud.js"></script> --> 
 </body>
 
