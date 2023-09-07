@@ -108,7 +108,7 @@ function runSolarSystemSimulation() {
 
 
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load("/Texture_planets/Milkyway.jpg");
+    var milkyWayTexture = new THREE.TextureLoader().load("./Texture_planets/Milkyway.jpg");
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -144,7 +144,7 @@ function runSolarSystemSimulation() {
     ];
 
 
-    var SunTexture = new THREE.TextureLoader().load("/Texture_planets/Sun-texture.jpg");
+    var SunTexture = new THREE.TextureLoader().load("./Texture_planets/Sun-texture.jpg");
     var sunGeometry = new THREE.SphereGeometry(planets[0].radius, 64, 64);
     var sunMaterial = new THREE.MeshBasicMaterial({ map: SunTexture });
     var sun = new THREE.Mesh(sunGeometry, sunMaterial);
@@ -152,7 +152,7 @@ function runSolarSystemSimulation() {
 
     for (var i = 1; i < planets.length; i++) {
         var planetGeometry = new THREE.SphereGeometry(planets[i].radius, 64, 64);
-        var planetTexture = new THREE.TextureLoader().load("/Texture_planets/" + planets[i].name + "-texture.jpg");
+        var planetTexture = new THREE.TextureLoader().load("./Texture_planets/" + planets[i].name + "-texture.jpg");
         var planetMaterial = new THREE.MeshBasicMaterial({ map: planetTexture });
         var planet = new THREE.Mesh(planetGeometry, planetMaterial);
         planet.position.x = planets[i].distance;
@@ -313,7 +313,7 @@ function runEarthSystemSimulation() {
 
     //Around the data
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load("/Texture_planets/Milkyway.jpg");
+    var milkyWayTexture = new THREE.TextureLoader().load("./Texture_planets/Milkyway.jpg");
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -340,8 +340,8 @@ function runEarthSystemSimulation() {
     for (var i = 0; i < planets.length; i++) {
 
         var planetGeometry = new THREE.SphereGeometry(planets[i].radius, 720, 360);
-        var planetTexture = new THREE.TextureLoader().load("/Texture_planets/Earth2-texture.jpg");
-        var bumpTexture = new THREE.TextureLoader().load("/Texture_planets/Earth-bump-map.jpg");
+        var planetTexture = new THREE.TextureLoader().load("./Texture_planets/Earth2-texture.jpg");
+        var bumpTexture = new THREE.TextureLoader().load("./Texture_planets/Earth-bump-map.jpg");
         var planetMaterial = new THREE.MeshPhongMaterial({
             map: planetTexture,
             displacementMap: bumpTexture,
@@ -367,7 +367,7 @@ function runEarthSystemSimulation() {
     function runClipping() {
         //Around the data
         // Load the panoramic image of the Milky Way
-        var milkyWayTexture = new THREE.TextureLoader().load("/Texture_planets/Milkyway.jpg");
+        var milkyWayTexture = new THREE.TextureLoader().load("./Texture_planets/Milkyway.jpg");
 
         // Create a large sphere geometry
         var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -396,8 +396,8 @@ function runEarthSystemSimulation() {
     const halfGeometry = new THREE.SphereGeometry(planets[0].radius, 720, 360, phiStart, phiEnd, thetaStart, thetaEnd);
     //const halfMaterial = new THREE.MeshBasicMaterial({ color: 0x9900ff, wireframe: true });
 
-        var planethalfTexture = new THREE.TextureLoader().load("/Texture_planets/Earth2-half-texture.jpg");
-        var bumphalfTexture = new THREE.TextureLoader().load("/Texture_planets/Earth-half-bump-map.jpg");
+        var planethalfTexture = new THREE.TextureLoader().load("./Texture_planets/Earth2-half-texture.jpg");
+        var bumphalfTexture = new THREE.TextureLoader().load("./Texture_planets/Earth-half-bump-map.jpg");
 
 
     var halfMaterial = new THREE.MeshPhongMaterial({
@@ -473,7 +473,7 @@ function runEarthSystemSimulation() {
         new_depths.push(depths[i])
        // console.log("iteration i "+i)
         // Load the data file
-        promises.push(fetch("/SP12RTS_5defequid/SP12RTS..ES." + depths[i] + "." + "eqdst.5.latlon.dat")
+        promises.push(fetch("./SP12RTS_5defequid/SP12RTS..ES." + depths[i] + "." + "eqdst.5.latlon.dat")
             .then(response => {
                 if (response.status === 200) {
                     console.log("File exists and Loaded");
@@ -652,7 +652,7 @@ exitClippingButton.addEventListener("click", function () {
 function exitClipping() {
     //Around the data
     // Load the panoramic image of the Milky Way
-    var milkyWayTexture = new THREE.TextureLoader().load("/Texture_planets/Milkyway.jpg");
+    var milkyWayTexture = new THREE.TextureLoader().load("./Texture_planets/Milkyway.jpg");
 
     // Create a large sphere geometry
     var milkyWayGeometry = new THREE.SphereGeometry(100, 64, 64);
@@ -693,7 +693,7 @@ light.intensity = 0.5;
 light.color.setHex(0xffffff);
 
 //add ambient light
-var ambientLight = new THREE.AmbientLight(0xffffff, 0.9);
+var ambientLight = new THREE.AmbientLight(0xffffff, 0.8);
 scene.add(ambientLight);
 
     camera.position.z = 5;
