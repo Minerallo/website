@@ -1,8 +1,14 @@
-import * as THREE from './three.module.js';
+import * as THREE from 'three';
 import { OrbitControls } from './OrbitControls.js';
 import { FontLoader } from 'three/addons/loaders/FontLoader.js';
 import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
 import "./style.css";
+
+// import * as THREE from './three.module.js';
+// import { OrbitControls } from './OrbitControls.js';
+// import { FontLoader } from 'three/addons/loaders/FontLoader.js';
+// import { TextGeometry } from 'three/addons/geometries/TextGeometry.js';
+// import "./style.css";
 
 
 // import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js';
